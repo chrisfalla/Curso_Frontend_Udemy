@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color:#89d42c;
+    text-decoration: underline solid rgb(76, 108, 13);
+    text-transform: uppercase;
+}
+
+p {
+    color: #04471c;
+    background-color: #cecece;
+    padding: 12px;
+    border: 10px solid #f9f7f4;
+   /* margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 100px;*/
+    margin: auto;
+    text-align:center;
+}

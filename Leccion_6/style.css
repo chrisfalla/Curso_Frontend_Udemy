@@ -1,0 +1,38 @@
+/*a toda la pagina se agrega esto
+*{
+    margin: 0;
+    padding: 0;
+}*/
+
+/*id en CSS*/
+#titulo_principal{
+    color: deeppink;
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    color: lime;
+}
+
+p {
+    color: maroon;
+    text-align: center;
+}
+
+/* clases en CSS*/
+.tarjeta {
+    border: 10px solid skyblue;
+    background-color: rgb(196, 24, 150);
+    text-align: center;
+    margin: 15px 100px;
+    padding:15px;
+}
+
+.left {
+    text-align: left;
+}
+
+.titulo{
+    color: darkorange;
+}

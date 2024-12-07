@@ -1,0 +1,27 @@
+.titulo {
+    color: #f72585;
+    text-align: center;
+}
+
+.marco {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #f72585;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.boton {
+    background-color: antiquewhite;
+    border: 3px solid #457b9d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.boton:hover{
+    background-color: blue;
+    color: coral;
+}

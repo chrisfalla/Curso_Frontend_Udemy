@@ -1,0 +1,44 @@
+/*h1{
+    color: chocolate;
+}
+
+a:link {
+    color:chartreuse;
+    text-decoration: none;
+}
+
+a:visited {
+    color: violet;
+    text-decoration: none;
+}
+
+/* cuando el cursor paso por encima del link*/
+
+/*a:hover {
+    color: green;
+    text-decoration:underline;
+}
+
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+*/
+
+h1{
+    color:#560bad ;
+}
+
+a:link, a:visited{
+   background-color: #b5179e; 
+   color: white;
+   padding:15px  25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+}
+
+a:hover, a:active{
+    background-color: #f72285;
+}
