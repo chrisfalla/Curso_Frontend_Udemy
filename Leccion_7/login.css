@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#ff3df5, #53e5ff);
+}
+
+.contenedor {
+  margin: 50px auto;
+  width: 300px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 14px;
+}
+
+.contenedor h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  color: rgb(22, 178, 251);
+  text-align: center;
+}
+
+.contenedor .elemento label{
+    color: white;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento input[type="submit"]{
+    background-color: rgb(158, 48, 227);
+    border: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
