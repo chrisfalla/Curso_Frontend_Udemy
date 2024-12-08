@@ -24,26 +24,26 @@ body {
   text-align: center;
 }
 
-.contenedor .elemento label{
-    color: white;
+.contenedor .elemento label {
+  color: white;
 }
 
-.contenedor .elemento input{
-    width: 100%;
-    padding: 10px 0;
-    color: rgb(255, 255, 255);
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    margin-bottom: 30px;
+.contenedor .elemento input {
+  width: 100%;
+  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
-.contenedor .elemento input[type="submit"]{
-    background-color: rgb(158, 48, 227);
-    border: none;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 15px;
-    margin-top: 30px;
+.contenedor .elemento input[type="submit"] {
+  background-color: rgb(158, 48, 227);
+  border: none;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px;
 }
