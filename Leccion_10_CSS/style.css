@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  background-color: black;
+  color: aliceblue;
+  font-size: 30px;
+  border: 1rem solid violet;
+  width: 250px;
+  margin:40px;
+}
+
+.box2 {
+  background-color: rgb(10, 131, 90);
+  color: rgb(216, 255, 74);
+  font-size: 30px;
+  border: 1rem solid rgb(228, 88, 42);
+  width: 250px;
+  margin: 20px;
+}
+ñ
