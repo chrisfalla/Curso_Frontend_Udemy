@@ -1,0 +1,17 @@
+*{
+    background-color: ghostwhite;
+    color: cornflowerblue;
+}
+
+h1, h3, p{
+    color: darkgreen;
+    text-align: center;
+}
+
+p.hola{
+    border: solid red;
+}
+
+p.mundo{
+    background-color: lightblue;
+}
