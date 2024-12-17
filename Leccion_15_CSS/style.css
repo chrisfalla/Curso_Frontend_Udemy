@@ -1,31 +1,52 @@
-div.contenedor{
-    position: relative;
-    width: 40%;
+div.contenedor {
+  position: relative;
+  width: 40%;
+  margin: auto;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.centro {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contenedor2 {
+  border: 3px solid burlywood;
+  background-color: gainsboro;
+  width: 30%;
+  height: 100px;
+  margin: auto;
+  overflow: auto;
+}
+
+.contenedor3 {
+  border: 3px solid burlywood;
+  background-color: gainsboro;
+  width: 30%;
+  height: 100px;
+  overflow: auto;
+  float: left;
+}
+.contenedor4 {
+  border: 3px solid burlywood;
+  background-color: gainsboro;
+  width: 30%;
+  height: 100px;
+  overflow: auto;
+  float: right;
+}
+
+.contenedor5{
     margin: auto;
-}
-
-.imagen{
-    width: 100%;
-}
-
-.centro{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    color: white;
-}
-
-h1{
-    text-align: center;
-}
-
-.contenedor2{
-    border: 3px solid burlywood;
-    background-color: gainsboro;
-    width: 30%;
-    height: 100px;
-    margin: auto;
-    overflow: auto;
 }
