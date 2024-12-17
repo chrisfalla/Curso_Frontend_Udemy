@@ -1,0 +1,32 @@
+
+
+h1{
+    color : #ffffff;
+    background-color: rgb(49, 100, 255);
+    text-align: center;
+    text-transform: none;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-decoration: underline rgb(255, 59, 59);
+}
+
+.caja{
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(210, 201, 201);
+    color: rgb(0, 0, 0);
+}
+
+.text{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: none;
+    font-variant: small-caps;
+    font-size: 3vh;
+}
