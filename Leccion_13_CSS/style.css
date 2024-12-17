@@ -1,0 +1,40 @@
+*{
+    background-color: rgb(209, 209, 209);
+}
+
+h1{
+    text-align: center;
+    display: none;
+}
+
+hr{
+    height: 3px;
+    background-color: darkolivegreen;
+}
+
+h4, div, p{
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: rgb(0, 35, 210);
+    display: block;
+    height: 40px;
+}
+
+p{
+    visibility: hidden;
+}
+
+span{
+    border: 5px solid indigo;
+}
+
+a{
+    display: block;
+    background-color: aqua;
+    height: 20px;
+    border: 2px solid rgb(90, 153, 28);
+}
+
+li{
+    display: inline;
+}
