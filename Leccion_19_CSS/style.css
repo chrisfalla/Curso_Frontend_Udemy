@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+    color: green;
+}
+
+.padre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: rgb(100, 216, 216);
+    height: 300px;
+    align-items: center;
+    align-content:space-evenly ;
+}
+
+div.padre >p{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(232, 13, 221);
+    margin: 20px;
+    padding: 15px;
+    font-size: 1rem;
+    width: 100px;
+    border-radius: 8px;
+}
+
+div.padre p{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
