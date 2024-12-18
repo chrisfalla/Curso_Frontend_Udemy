@@ -1,6 +1,7 @@
 h1 {
   color: crimson;
   text-align: center;
+  text-shadow: 6px 4px  4px grey;
 }
 
 div.contenedor {
@@ -53,4 +54,26 @@ div.contenedor p::before{
 }
 div.contenedor p::after{
   content: " -";
+}
+
+.box{
+  margin: auto;
+  text-align: center;
+  width: 40%;
+  height: 20%;
+  border: 20px groove saddlebrown;
+  color: darkblue;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 6px 10px 5px rgb(93, 90, 90);
+}
+
+.box img{
+  width: 95%;
+  opacity: .5;
+}
+
+.box img:hover{
+  opacity: 1;
 }
