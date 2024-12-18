@@ -1,0 +1,56 @@
+h1 {
+  color: crimson;
+  text-align: center;
+}
+
+div.contenedor {
+  width: 30%;
+  height: 20%;
+  margin: auto;
+  border: 4px solid #23cf65;
+  padding: 15px;
+  color: orangered;
+  text-align: center;
+}
+
+div.contenedor:hover {
+  background-color: darkblue;
+  color: cyan;
+}
+
+div.contenedor.oculto p {
+  display: none;
+}
+
+div.contenedor.oculto:hover p {
+  display: block;
+  background-color: #a7cf23;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+div.contenedor.primero p:first-child{
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+div.contenedor p::selection{
+  background-color: rgb(232, 54, 54);
+  color: rgb(255, 255, 255);
+}
+
+div.contenedor p::first-line{
+  font-variant: small-caps;
+}
+
+div.contenedor p::first-letter{
+  font-size: 40px;
+  color: cornflowerblue;
+}
+
+div.contenedor p::before{
+  content: "- ";
+}
+div.contenedor p::after{
+  content: " -";
+}
