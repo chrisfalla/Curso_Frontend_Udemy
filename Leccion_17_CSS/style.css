@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    border: 3px solid black;
+    padding: 15px;
+    color: rgb(66, 66, 0);
+}
+
+div.contenedor p{
+    background-color: antiquewhite;
+}
+
+div.contenedor.hijo >p{
+    background-color: darkgray;
+}
+
+div.contendor.adyacente +p{
+    background-color: khaki;
+}
+
+div.contenedor.hermano ~ {
+    border: 2px solid mediumslateblue;
+    background-color: coral;
+}
