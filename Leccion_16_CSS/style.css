@@ -1,0 +1,38 @@
+h2 {
+  color: lightseagreen;
+}
+
+div.contenedor {
+  width: 80%;
+  height: 20%;
+  overflow: auto;
+  margin: auto;
+  border: 2px dashed rgb(32, 51, 117);
+}
+
+span {
+  background-color: rgb(190, 133, 133);
+  border: 3px solid red;
+  height: 50px;
+  padding: 15px;
+  display: inline-block;
+}
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 15px;
+  background-color: aqua;
+  border: 20px groove darkorchid;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(64, 39, 203);
+}
