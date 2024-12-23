@@ -25,10 +25,21 @@
 // };
 // console.log("fin del ciclo for");
 
+// for (let count = 0; count <= 10; count++) {
+//     if (count % 2 == 0) {
+//         console.log(count)
+//         break;
+//     }
+// }
+// console.log("fin del ciclo for")
+
+inicio:
 for (let count = 0; count <= 10; count++) {
     if (count % 2 == 0) {
         console.log(count)
-        break;
+        continue  inicio;// ir a la siguiente iteracion
+    } else{
+        console.log("Impar: " + count);
     }
-}
-console.log("fin del ciclo for")
+};
+console.log("fin del ciclo for");
