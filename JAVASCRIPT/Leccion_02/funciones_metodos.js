@@ -9,5 +9,10 @@ console.log()
 
 // funciones de tipo expresion 
 let x = function (a, b) { return a + b };
-resultado = x(2,2);
+resultado = x(2, 2);
 console.log(resultado);
+
+// funciones self-invoking
+(function(a, b){
+    console.log('Ejecutando la funcion ' + (a + b));
+})(2, 3);
