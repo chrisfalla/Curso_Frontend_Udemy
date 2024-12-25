@@ -74,14 +74,35 @@ function People(nombre, apellido, edad) {
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
+    this.nameComplete = function () {
+        return this.nombre + " " + this.apellido;
+    }
 }
 // cada vez que uso la palabra new se crea un nuevo objeto
 // osea el constructor permite crear algo general y de ahi se crean mas objetos
 let padre = new People("juan", "perez", 50);
-console.log(padre);
+console.log(padre.nameComplete());
 
 let madre = new People("erika", "villarreal", 45);
-console.log(madre);
+console.log(madre.nameComplete());
 
 padre.nombre = "pedro";
-console.log(padre);
+// console.log(padre);
+// las que s¿son simplificadas son las que mas se recomiendan
+let miObjeto = new Object();
+let miObjeto2 = {};
+
+let miString = new String("hola_mundo");
+let miString2 = "hola_mundo";
+
+let miNumero = new Number(12);
+let miNumero2 = 12;
+
+let miBoleano = new Boolean(true);
+let miBoleano2 = true;
+
+let miArreglo = new Array();
+let miArreglo2 = [];
+
+let miFuncion = new Function();
+let miFuncion2 = function () { };
