@@ -68,3 +68,20 @@ let persona3 = {
 };
 persona.lang = "ingles";
 console.log(persona3.idioma);
+
+// constructores de objetos
+function People(nombre, apellido, edad) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+}
+// cada vez que uso la palabra new se crea un nuevo objeto
+// osea el constructor permite crear algo general y de ahi se crean mas objetos
+let padre = new People("juan", "perez", 50);
+console.log(padre);
+
+let madre = new People("erika", "villarreal", 45);
+console.log(madre);
+
+padre.nombre = "pedro";
+console.log(padre);
