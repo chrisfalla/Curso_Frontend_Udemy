@@ -67,24 +67,28 @@ let persona3 = {
     }
 };
 persona.lang = "ingles";
-console.log(persona3.idioma);
+// console.log(persona3.idioma);
 
 // constructores de objetos
 function People(nombre, apellido, edad) {
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
-    this.nameComplete = function () {
-        return this.nombre + " " + this.apellido;
+    this.nameComplete = function (titulo, edad) {
+        return titulo + ":" + this.nombre + " " + this.apellido + edad;
     }
-}
+}// aqui se va a agregar un metedo para todos los objetos que esten con ese contructor
+People.prototype.telefono = "1234567890";
+
+
 // cada vez que uso la palabra new se crea un nuevo objeto
 // osea el constructor permite crear algo general y de ahi se crean mas objetos
 let padre = new People("juan", "perez", 50);
-console.log(padre.nameComplete());
+padre.telefono = 3134046615;
+// console.log(padre.telefono);
 
 let madre = new People("erika", "villarreal", 45);
-console.log(madre.nameComplete());
+// console.log(madre.nameComplete());
 
 padre.nombre = "pedro";
 // console.log(padre);
@@ -106,3 +110,22 @@ let miArreglo2 = [];
 
 let miFuncion = new Function();
 let miFuncion2 = function () { };
+
+// y si se quiere modificar el valor de un objeto en especifico se llama al nombre del obejto mas . y el nombre de la nueva propiedad
+padre.telefono = "123123123";
+// console.log(padre);
+
+// metodo de call para llamar metodos definidos en unos obejtos a otros
+let telefono1 = {
+    marca: "samsung",
+    precio: 1000,
+    marcaPrecio: function (titulo, color) {
+        return titulo + ":" + this.marca + " " + this.precio + color;
+    }
+}
+let telefono2 = {
+    marca: "iphone",
+    precio: 1300,
+}
+//uso de call para llamar el metodo de telefono1 en telefono2
+console.log(telefono1.marcaPrecio.call(telefono2, "Xiaomi", "blanco"));
