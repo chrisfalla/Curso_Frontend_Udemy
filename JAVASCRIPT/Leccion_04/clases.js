@@ -11,9 +11,40 @@ class Persona {
     set nombre(nombre) {
         this._nombre = nombre;
     }
+    get apellido() {
+        return this._apellido;
+    }
+    set apellido(apellido) {
+        this._apellido = apellido;
+    }
+    nombreCompleto() {
+        return this._nombre + " " + this._apellido;
+    }
+    toString() {
+        return this.nombreCompleto();
+    }
 }
-let Persona1 = new Persona("Christofer", "Falla");
-Persona1.nombre = "Christofer Mark";
-console.log(Persona1.nombre);
-let Persona2 = new Persona("Erika", "Villarreal");
-console.log(Persona2.nombre);
+class Empleado extends Persona {
+    constructor(nombre, apellido, departamento) {
+        super(nombre, apellido);
+        this._departamento = departamento;
+    }
+    get departamento() {
+        return this._departamento;
+    }
+    set departamento(departamento) {
+        this._departamento = departamento;
+    }//sobreescritura de metodos, la palabra resevada de super se utiliza para llamar al metodo de la clase padre
+    nombreCompleto() {
+        return super.nombreCompleto() + "" + this._departamento;
+    }
+}
+// let Persona1 = new Persona("Christofer", "Falla");
+// Persona1.nombre = "Christofer Mark";
+// console.log(Persona1.nombre);
+// let Persona2 = new Persona("Erika", "Villarreal");
+// console.log(Persona2.nombre);
+let Empleado1 = new Empleado("Christofer", "Falla", "Sistemas");
+// el polimorfismo es cuando puedo llamar de un obejto de una clase hija a un metodo de la clase padre
+console.log(Empleado1.toString());
+console.log(Empleado1.nombreCompleto());
