@@ -129,3 +129,7 @@ let telefono2 = {
 }
 //uso de call para llamar el metodo de telefono1 en telefono2
 console.log(telefono1.marcaPrecio.call(telefono2, "Xiaomi", "blanco"));
+let arreglo = ["Xiaomi", "blanco"];
+// con el metodo call hay que especificarle los parametros que recibe la funcion
+//con el metodo apply se le pasa un arreglo con los parametros y recorre el arrglo
+console.log(telefono1.marcaPrecio.apply(telefono2, arreglo));
