@@ -1,3 +1,5 @@
+// las clases son una plantilla para crear objetos, son modelos a seguir
+//hoisting es cuando se declara una variable y se le asigna un valor despues no se puede declarar la variable antes de haber creado la clase
 class Persona {
     constructor(nombre, apeliido) {
         this._nombre = nombre;
