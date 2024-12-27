@@ -64,7 +64,7 @@ class Orden {
 
 let producto1 = new Producto("casco", 200);
 let producto2 = new Producto("jean", 150);
-let orden1 = new Orden();
+let orden1 = new Orden(); 
 orden1.agregarProductos(producto1);
 orden1.agregarProductos(producto2);
 orden1.mostrarOrden();

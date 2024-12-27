@@ -91,4 +91,4 @@ let empleado2 = new Empleado("Maria", "Jimenez", 30, 5000);
 let cliente2 = new Cliente("Alberto", "Juarez", 35, new Date());
 console.log(persona2.toString());
 console.log(empleado2.toString());
-console.log(cliente2.toString());
+console.log(cliente2.toString()); 

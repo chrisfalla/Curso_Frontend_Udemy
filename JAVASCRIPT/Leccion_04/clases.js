@@ -62,4 +62,4 @@ console.log(Empleado1.nombreCompleto());
 //los metodos estaticos se pueden llamar sin necesidad de instanciar un objeto
 Persona.saludar();
 Persona.saludar2(Empleado1);
-console.log(persona1.email);
+console.log(persona1.email); 

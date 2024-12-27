@@ -15,6 +15,6 @@ class Empleado extends Persona {
     }
     // el metodo de tostring es para convertir a cadena de texto los atributos de un objeto 
     toString() {
-        return super.toString() + ` ${this._idEmpleado} ${this._sueldo}`;
+        return super.toString() + ` ${this._idEmpleado} ${this._sueldo}`; 
     }
 }
