@@ -1,7 +1,8 @@
 // creamos la clase persona que va a servir de plantilla para crear otra clases co herencia 
 class Persona {
-    constructor(idPeronsa, nombre, apellido, edad) {
-        static = idPeronsa = 0;
+    static = contadorPersonas = 0;
+    constructor(idPersona, nombre, apellido, edad) {
+        this._idPersona = ++Persona.contadorPersonas;
         this._nombre = nombre;
         this._apellido = apellido;
         this._edad = edad;
