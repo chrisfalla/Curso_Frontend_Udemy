@@ -21,8 +21,18 @@ class Gerente extends Empleado {
         return `Gerente: ${super.obtenerDetalles()}, departamento: ${this.departamento}`;
     }
 }
-function imprimir(tipo) {
+function determinarTipo(tipo) {
     console.log(tipo.obtenerDetalles());
+    // instanceof es un operador que se utiliza para saber si un objeto es de una clase en particular
+    if (tipo instanceof Gerente) {
+        console.log('Es un objeto de tipo Gerente');
+        console.log(tipo.departamento);
+    } if (tipo instanceof Empleado) {
+        console.log('Es un objeto de tipo Empleado');
+        console.log(tipo.departamento);
+    } if (tipo instanceof Object) {
+        console.log('Es un objeto de tipo Object');
+    }
 }// aqui aplicamos el polimorfismo,
 //  que es la capacidad de un objeto de comportarse de diferentes formas
 //  dependiendo de la clase que se este utilizando
@@ -32,5 +42,6 @@ let empleado1 = new Empleado('Juan', 3000);
 let gerente1 = new Gerente('Carlos', 5000, 'Sistemas');
 // cuando hacemos la sobreeescritura el metodo de la clase padre se esconde
 //  y solo se puede acceder al metodo de a clase padre con la palabra super
-imprimir(empleado1);
-imprimir(gerente1);
+determinarTipo(empleado1);
+determinarTipo(gerente1);
+
