@@ -9,18 +9,22 @@
 
 <body>
     <form action="get" id="formulario">
-        Nombre: <input type="text" name="nombre" value=""><br>
-        Apellido <input type="text" name="apellido" value=""><br>
+        Nombre: <input type="text" name="nombre" value="christofer"><br>
+        Apellido <input type="text" name="apellido" value="falla"><br>
     </form>
     <button onclick="mostrarValores()">Mostrar valores</button>
     <div id="showValue"></div>
     <script>
         function mostrarValores() {
             let formulario = document.forms["formulario"];
-            let box = "";
-            for (let i of formulario) {
-                box += i.value + " "
-            } document.getElementById("showValue").innerHTML = box;
+            let texto = "";
+            let nombre = formulario["nombre"];
+            let apellido = formulario["apellido"];
+            texto = nombre.value + "<br>" + apellido.value;
+            //for (let i of formulario) {
+            //    box += i.value + " "
+            //}
+             document.getElementById("showValue").innerHTML = texto;
         }
     </script>
 </body>
