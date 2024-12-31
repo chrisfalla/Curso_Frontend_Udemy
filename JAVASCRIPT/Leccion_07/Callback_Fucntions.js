@@ -24,3 +24,9 @@ function miFuncionCallback() {
 setTimeout(miFuncionCallback, 3000);
 setTimeout(function saludo() { console.log('saludo desde mi funcion callback anonima') }, 2000);
 setTimeout( () => console.log('saludo desde mi funcion callback flecha'), 4000);
+// setInterval se ejecuta cada cierto tiempo
+let reloj = () => {
+    let fecha = new Date();
+    console.log(`${fecha.getHours()}: ${fecha.getMinutes()}:${fecha.getSeconds()}`);
+}
+// setInterval(reloj, 10);
