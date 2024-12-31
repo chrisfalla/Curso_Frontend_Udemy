@@ -21,3 +21,9 @@ let promesa = new Promise((resolve) => {
     console.log("fin promesa");
 });
 promesa.then(valor => console.log(valor));
+
+// async indica que una función regresa una promesa
+async function miFuncionConPromesa() {
+    return "saludo con promesa y async";
+}
+miFuncionConPromesa().then(valor => console.log(valor));
