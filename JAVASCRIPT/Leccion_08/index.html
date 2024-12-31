@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     <h1 id="titulo">ejemplo del dom con javascript</h1>
-    <p id="parrafo">saludos</p>
+    <p id="parrafo" class="azul">saludos</p>
+    <p id="parrafo2" class="azul">segundo parrafo</p>
+    <p id="parrafo2" class="rojo">tercer parrafo</p>
 
 
 
     <script>
         let titulo = document.getElementById("titulo");
         let parrafo = document.getElementById("parrafo");
+        let elementos = document.getElementsByClassName("azul");
+        let elements = document.querySelectorAll("p.azul");
+        for( let elemento of elementos) {
+            console.log(elemento.innerHTML);
+        }
+        console.log("numero de elementos: " + elementos.length);
+        for (let i = 0; i < elementos.length; i++) {
+            console.log(i + " :" + elementos[i].innerHTML);
+        };
+        let text = document.getElementsByClassName("azul");
+
         //para modificar el valor del dom dentro de html se hace asi:
         titulo.innerHTML = "nuevo valor del titulo";
         parrafo.innerHTML = "nuevo valor del parrafo";
     </script>
 </body>
+
 </html>
