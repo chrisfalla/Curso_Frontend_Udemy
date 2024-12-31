@@ -16,3 +16,11 @@ function sumar(a, b, funcionCallback) {
 }
 
 sumar(2, 3, imprimir);
+// llamadas asincronas con el uso del settimeout 
+function miFuncionCallback() {
+    console.log('saludo desde mi funcion callback asincrona osea despues de 3 segundos');
+}
+// setTimeout recibe dos parametros, el primero es la funcion que se va a ejecutar y el segundo es el tiempo en milisegundos
+setTimeout(miFuncionCallback, 3000);
+setTimeout(function saludo() { console.log('saludo desde mi funcion callback anonima') }, 2000);
+setTimeout( () => console.log('saludo desde mi funcion callback flecha'), 4000);
