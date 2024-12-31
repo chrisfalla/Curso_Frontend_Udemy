@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Manejo del DOM con Javascript</h1>
-    <button onclick="mostrar()">Mostrar</button><br>
+    <h1 id="titulo">Manejo del DOM con Javascript</h1>
+    <button onclick="cambiarTitulo()">click para cambiar titulo</button><br>
     <script>
-        document.write("saudos desde javascript");
-        function mostrar () {
-            document.write("se borra todo cuidado con write");
+        function cambiarTitulo() {
+            //document.write("se borra todo cuidado con write");
+            document.getElementById("titulo").innerHTML += "</br> nuevo titutlo"
         }
     </script>
 </body>
+
 </html>
