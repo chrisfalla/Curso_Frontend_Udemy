@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="titulo">ejemplo del dom con javascript</h1>
+    <p id="parrafo">saludos</p>
+
+
+
+    <script>
+        let titulo = document.getElementById("titulo");
+        let parrafo = document.getElementById("parrafo");
+        //para modificar el valor del dom dentro de html se hace asi:
+        titulo.innerHTML = "nuevo valor del titulo";
+        parrafo.innerHTML = "nuevo valor del parrafo";
+    </script>
+</body>
+</html>
