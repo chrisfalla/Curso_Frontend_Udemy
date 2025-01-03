@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">manejo del dom co javasscript </h1><br>
+    <div id="contenido">hello world</div>
+    <script>
+        document.getElementById('titulo').onclick = cambiarTexto;
+        function cambiarTexto () {
+            document.getElementById("titulo").innerHTML = "Nuevo texto";
+        }
+        document.getElementById("contenido").onclick = changeContent;
+        function changeContent() {
+            document.getElementById("contenido").innerHTML = "Nuevo contenido";
+        }
+    </script>
+</body>
+</html>
