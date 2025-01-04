@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -29,6 +29,27 @@
         document.getElementById("contenido").onclick = changeContent;
         function changeContent() {
             document.getElementById("contenido").innerHTML = "Nuevo contenido";
+        }
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="entrar()">
+    <h1 id="titulo">manejo del dom co javasscript </h1><br>
+    Nombre:
+    <input type="text" onchange="convertir(this)">
+    <script>
+        function convertir(nameInput) {
+            nameInput.value = nameInput.value.toUpperCase();
         }
     </script>
 </body>
