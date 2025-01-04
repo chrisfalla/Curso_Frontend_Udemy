@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">funcion de onfocus y onblur </h1><br>
+    nombre:
+    <input type="text" onfocus="cambiarFondo(this)" onblur="cambiarFondo2(this)"><br><br>
+    nombre:
+    <input type="text" onfocus="cambiarFondo(this)" onblur="cambiarFondo2(this)">
+    <script>
+        function cambiarFondo(nameInput) {
+            nameInput.style.backgroundColor = "yellow";
+        }
+        function cambiarFondo2(nameInput) {
+            nameInput.style.backgroundColor = "#119ee8";
+        }
+    </script>
+</body>
+
+</html>
