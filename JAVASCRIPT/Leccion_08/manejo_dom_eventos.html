@@ -1,16 +1,29 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<body onload="entrar()">
     <h1 id="titulo">manejo del dom co javasscript </h1><br>
     <div id="contenido">hello world</div>
     <script>
+        function entrar() {
+            let texto = ""
+            if (navigator.cookieEnabled) {
+                texto = "las cookies estan habilitadas";
+            }
+            else {
+                texto = "las cookies no estan habilitadas";
+            }
+            document.getElementById("contenido").innerHTML = texto;
+        }
+        alert("Bienvenido a la pagina");
         document.getElementById('titulo').onclick = cambiarTexto;
-        function cambiarTexto () {
+        function cambiarTexto() {
             document.getElementById("titulo").innerHTML = "Nuevo texto";
         }
         document.getElementById("contenido").onclick = changeContent;
@@ -19,4 +32,69 @@
         }
     </script>
 </body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">manejo del dom co javasscript </h1><br>
+    <h1 id="titulo2" onmouseover="rojo(this)" onmouseout="azul(this)">manejo del dom con javascript </h1><br>
+    <!-- Nombre:
+    <input type="text" onchange="convertir(this)"> -->
+<!---->
+<script>
+    function convertir(nameInput) {
+        nameInput.value = nameInput.value.toUpperCase();
+    }
+    function rojo(titulo2) {
+        titulo2.style.color = "red";
+    }
+    function azul(titulo2) {
+        titulo2.style.color = "blue";
+    }
+</script>
+</body> -->
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">manejo del dom co javasscript </h1><br>
+    <h1 id="titulo2" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">manejo del dom con javascript
+    </h1><br>
+    <!-- Nombre:
+    <input type="text" onchange="convertir(this)"> -->
+    <script>
+        function convertir(nameInput) {
+            nameInput.value = nameInput.value.toUpperCase();
+        }
+        function rojo(titulo2) {
+            console.log("rojo-onmousedown");
+            titulo2.style.color = "red";
+        }
+        function azul(titulo2) {
+            console.log("azul-onmouseup");
+            titulo2.style.color = "blue";
+        }
+        function verde(titulo2) {
+            console.log("verde-onclick");
+            titulo2.style.color = "green";
+        }
+    </script>
+</body>
+
 </html>
