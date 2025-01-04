@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>evento de escucha addEventListener</h1><br>
+    <form action="get" id="registro">
+        nombre:
+        <input type="text" id="nombre"><br>
+        apellido:
+        <input type="text" id="apellido">
+    </form>
+    <script>
+        const registro = document.getElementById("registro");
+        registro.addEventListener("focus", (evento) => {
+            evento.target.style.background = "greenyellow";
+        }, true);
+        registro.addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        },true);
+    </script>
+    <!-- <script>
+        //funciones tipo fecha pero que no se pueden reutilizar.
+        document.getElementById("nombre").addEventListener("focus", (evento) => {
+            evento.target.style.background = "violet";
+        });
+        document.getElementById("nombre").addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        });
+        document.getElementById("apellido").addEventListener("focus", (evento) => {
+            evento.target.style.background = "violet";
+        });
+        document.getElementById("apellido").addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        });
+    </script> -->
+    <!-- <script>
+        //funciones tipo callback
+        document.getElementById("nombre").addEventListener("focus", cambiarFondo1);
+        document.getElementById("nombre").addEventListener("blur", cambiarFondo2);
+        document.getElementById("apellido").addEventListener("focus", cambiarFondo1);
+        document.getElementById("apellido").addEventListener("blur", cambiarFondo2);
+        function cambiarFondo1(evento) {
+            let componente = evento.target;
+            componente.style.background = "blue";
+        }
+        function cambiarFondo2(evento) {
+            evento.target.style.background = "white";
+        }
+    </script> -->
+    <!-- <h1 id="titulo">funcion de onfocus y onblur </h1><br>
+    nombre:
+    <input type="text" onfocus="cambiarFondo(this)" onblur="cambiarFondo2(this)"><br><br>
+    nombre:
+    <input type="text" onfocus="cambiarFondo(this)" onblur="cambiarFondo2(this)">
+    <script>
+        function cambiarFondo(nameInput) {
+            nameInput.style.backgroundColor = "yellow";
+        }
+        function cambiarFondo2(nameInput) {
+            nameInput.style.backgroundColor = "#119ee8";
+        }
+    </script> -->
+</body>
+
+</html>
